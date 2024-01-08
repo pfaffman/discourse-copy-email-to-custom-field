@@ -17,8 +17,8 @@ end
 require_relative "lib/copy_email_to_custom_field_module/engine"
 
 after_initialize do
-  EMAIL_CUSTOM_FIELD_RECORD||=UserField.find_by(name: "Email")
-  EMAIL_CUSTOM_FIELD||= EMAIL_CUSTOM_FIELD_RECORD ? "user_field_#{EMAIL_CUSTOM_FIELD_RECORD.id}" : nil
+  EMAIL_CUSTOM_FIELD_RECORD ||= UserField.find_by(name: "Email")
+  EMAIL_CUSTOM_FIELD ||= EMAIL_CUSTOM_FIELD_RECORD ? "user_field_#{EMAIL_CUSTOM_FIELD_RECORD.id}" : nil
   # Code which should run after Rails has finished booting
   add_model_callback(User, :before_save) do
     user=self
