@@ -1,5 +1,5 @@
-# **Plugin Name** Plugin
+# **discourse-copy-email-to-custom-field** Plugin
 
 **Plugin Summary**
 
-For more information, please see: **url to meta topic**
+Copy email address to custom user field of same name.
