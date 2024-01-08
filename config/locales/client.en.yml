@@ -3,7 +3,7 @@ en:
     admin:
       site_settings:
         categories:
-          TODO_plugin_name: "Plugin Name"
+          copy_email_to_custom_field_module: "Sync Email to UCF"
   js:
-    discourse_plugin_name:
+    copy_email_to_custom_field_module:
       placeholder: placeholder
